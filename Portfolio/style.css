@@ -1,0 +1,1330 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Exo+2:wght@400;500&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oxanium&family=Poppins&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;1,400&family=Rubik&family=Sora:wght@500&family=Space+Grotesk&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Exo+2:wght@400;500&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oxanium&family=Poppins&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;0,900;1,400&family=Rubik:wght@900&family=Sora:wght@500&family=Space+Grotesk&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Exo+2:wght@400;500&family=Nova+Square&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oxanium&family=Poppins&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;0,900;1,400&family=Rubik:wght@900&family=Sora:wght@500&family=Space+Grotesk&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 550vh;
+    background: yellow url(img/body-bg.png);
+
+}
+
+.navigationContainer {
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    transition: 1s all ease;
+
+}
+
+.ResponsivenavigationContainer {
+    display: none;
+}
+
+.navigationContainer .logo {
+    font-size: 70px;
+    font-family: 'Nova Square', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(90deg, #4E56DC, #864EEF);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: #4E56DC;
+    -webkit-text-stroke: 5px;
+    letter-spacing: 5px;
+
+}
+
+.navigationContainer Navbar {
+
+    width: 40%;
+
+
+}
+
+.navigationContainer Navbar nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ui_ux {
+    width: min-content;
+    white-space: nowrap;
+    border: 1px solid black;
+    position: relative;
+    padding: 10px 5px;
+}
+
+.ui_ux::after {
+    content: "";
+    top: -6%;
+    right: -2%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ui_ux::before {
+    content: "";
+    bottom: -6%;
+    right: -2%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.i {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.i::after {
+    content: "";
+    top: -6%;
+    left: -2%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.i::before {
+    content: "";
+    bottom: -7%;
+    left: -2%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.homeContainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.homeContainer .backgroundText {
+    position: absolute;
+    font-size: 10rem;
+    font-weight: 900;
+    font-family: 'Nova Square', sans-serif;
+    top: 20%;
+    left: 0;
+    color: rgb(231, 231, 19);
+}
+
+.homeContainer .introduction {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.homeContainer .introduction .leftSide {
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+
+
+
+}
+
+.homeContainer .introduction .leftSide .hello {
+    font-size: 3rem;
+    position: relative;
+    font-family: 'Nova Square', sans-serif;
+    font-weight: 600;
+
+}
+
+.homeContainer .introduction .leftSide .hello .line {
+    width: 52vh;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-weight: 900;
+
+}
+
+.homeContainer .introduction .leftSide .intro {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 2%;
+
+}
+
+.homeContainer .introduction .leftSide .role {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.homeContainer .introduction .imageSide {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.homeContainer .introduction .leftSide .btns {
+    display: flex;
+    align-items: center;
+}
+
+.homeContainer .introduction .leftSide a {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 40px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgb(151, 151, 15);
+    outline: none;
+    margin-top: 2%;
+
+}
+
+.homeContainer .introduction .leftSide .hire {
+    color: white;
+    background: linear-gradient(90deg, #4B56DE, #8350ED);
+    transition: 0.2s all ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+
+}
+
+.hire a {
+    color: white;
+}
+
+.homeContainer .introduction .leftSide .hire:hover {
+
+    border: 2px solid #4B56DE;
+    background: linear-gradient(90deg, white, white);
+    color: black;
+
+}
+
+.homeContainer .introduction .leftSide .cv {
+    background-color: white;
+    border: 2px solid #4B56DE;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    margin-left: 2%;
+
+}
+
+.homeContainer .introduction .leftSide .cv:hover {
+    border: none;
+    background: linear-gradient(90deg, #4B56DE, #8350ED);
+    color: white;
+
+
+}
+
+
+.AboutContainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.AboutContainer .AboutImageSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AboutContainer .AboutSide {
+    width: 48%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AboutContainer .AboutSide .about {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AboutContainer .AboutSide .aboutMyself {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 5vh;
+}
+
+.AboutContainer .AboutSide .downloadCv {
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #4B56DE, #8350ED);
+    transition: 0.2s all ease-in-out;
+    border: none;
+    cursor: pointer;
+
+}
+
+.AboutContainer .AboutSide .downloadCv:hover {
+
+    border: 2px solid #4B56DE;
+    background: linear-gradient(90deg, white, white);
+    color: black;
+
+}
+
+.SkillContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.heading {
+    font-size: 4rem;
+    font-family: 'Nova Square', sans-serif;
+
+}
+
+.SkillContainer .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.Card {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s all ease;
+
+
+}
+
+.htmlCard:hover {
+    box-shadow: inset 5px 5px orangered,
+        inset -5px -5px orangered,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+
+}
+
+.CssCard:hover {
+    box-shadow: inset 5px 5px rgb(18, 71, 247),
+        inset -5px -5px rgb(18, 71, 247),
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+
+}
+
+.JSCard:hover {
+    box-shadow: inset 5px 5px #f3ef1d,
+        inset -5px -5px #f3ef1d,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+
+}
+
+
+.ReactCard:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+
+}
+
+
+
+.htmlCard .skillName,
+.CssCard .skillName,
+.JSCard .skillName,
+.ReactCard .skillName {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Nova Square', sans-serif;
+
+
+
+}
+
+.htmlCard .skillDiscription,
+.CssCard .skillDiscription,
+.JSCard .skillDiscription,
+.ReactCard .skillDiscription {
+    text-align: justify;
+}
+
+.ProjectContainer {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ProjectContainer .projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.ProjectContainer .projects .projects_card_layout {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+
+}
+
+.project1,
+.project2,
+.project3,
+.project4, .project5 {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.project_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project_title {
+    font-size: 2rem;
+}
+
+.project_img .slide_up {
+    width: 100%;
+    height: 100%;
+}
+
+.project_img .slide_up img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.project_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 7s all ease-in-out;
+    transform: translateY(0);
+}
+
+.project1 .project_img:hover img {
+    transform: translateY(-400%);
+    cursor: pointer;
+}
+
+.project2 .project_img:hover img {
+    transform: translateY(-500%);
+    cursor: pointer;
+}
+
+.project3 .project_img:hover img {
+    transform: translateY(-200%);
+    cursor: pointer;
+}
+
+.project4 .project_img:hover img {
+    transform: translateY(-200%);
+    cursor: pointer;
+}
+
+.project5 .project_img:hover img {
+    transform: translateY(-600%);
+    cursor: pointer;
+}
+
+.project1:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+}
+
+.project2:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+}
+
+.project3:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+}
+
+.project4:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+}
+
+.project5:hover {
+    box-shadow: inset 5px 5px skyblue,
+        inset -5px -5px skyblue,
+        5px 5px 60px rgba(0, 0, 0, 0.192),
+        -5px -5px 60px rgba(0, 0, 0, 0.089);
+    transform: scale(1.02);
+}
+
+.ContactContainer {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+.ContactContainer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.contact a {
+
+    background: linear-gradient(90deg, #4B56DE, #8350ED);
+    padding: 5px 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(97, 97, 49, 0.336);
+
+
+}
+
+.contact a:hover {
+    background: linear-gradient(90deg, white, white);
+    color: black;
+    border: 2px solid #4B56DE;
+
+}
+
+
+.ResponsivenavigationContainer .head .menu {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    /* background-color: #333ce4; */
+}
+
+.ResponsivenavigationContainer .head .menu div span {
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+
+}
+
+.ResponsivenavigationContainer .head .menu div .line1 {
+    transform: translate(-50%, -16px);
+}
+
+.ResponsivenavigationContainer .head .menu div .line3 {
+    transform: translate(-50%, 11px);
+}
+
+.ResponsivenavigationContainer .head .openmenu div .line1 {
+    transform: translate(-50%, -50%) rotate(45deg);
+
+}
+
+.ResponsivenavigationContainer .head .openmenu div .line2 {
+    width: 0;
+
+}
+
+.ResponsivenavigationContainer .head .openmenu div .line3 {
+    transform: translate(-50%, -50%) rotate(135deg);
+
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    .navigationContainer {
+        display: none;
+    }
+
+    .ResponsivenavigationContainer.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .ResponsivenavigationContainer {
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        color: white;
+        position: relative;
+        transition: 0.5s all ease-in-out;
+
+
+
+    }
+
+    .ResponsivenavigationContainer .head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+
+    .ResponsivenavigationContainer .head .logo {
+        font-size: 40px;
+        font-family: 'Nova Square', sans-serif;
+        font-weight: 900;
+        background: linear-gradient(90deg, #4E56DC, #864EEF);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: #4E56DC;
+        -webkit-text-stroke: 5px;
+        letter-spacing: 5px;
+
+    }
+
+
+
+    .ResponsivenavigationContainer .Navbar {
+        width: 100%;
+        height: 0vh;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .ResponsivenavigationContainer .Navbar nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        font-size: 2.3rem;
+
+    }
+
+
+    .ResponsivenavigationContainer navbar nav a {
+        color: white;
+        border-bottom: 1px solid rgb(63, 61, 61);
+    }
+
+    .ResponsivenavigationContainer navbar nav .active {
+        color: #4B56DE;
+    }
+
+    .homeContainer .introduction .leftSide {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 7%;
+
+
+    }
+
+    .homeContainer .backgroundText {
+        position: absolute;
+        top: 37%;
+        left: 0;
+    }
+
+    .imageSide {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .homeContainer .introduction .leftSide .btns {
+        margin-top: 5%;
+    }
+
+    .AboutContainer {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+
+    }
+
+    .homeContainer .introduction .leftSide .hello .line {
+        width: 30vh;
+
+
+    }
+
+    .hire {
+        font-size: 1.8rem;
+    }
+
+    .cv {
+        font-size: 1.8rem;
+    }
+
+    .AboutContainer .AboutImageSide {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .AboutContainer .AboutImageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutContainer .AboutSide {
+        width: 90%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .AboutContainer .AboutSide .aboutMyself {
+        font-size: 1.9rem;
+
+    }
+
+    .SkillContainer .skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .SkillContainer {
+        height: 250vh;
+    }
+
+    .Card {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 2rem;
+        display: flex;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.5s all ease;
+
+
+    }
+
+
+
+    .ProjectContainer {
+        width: 100%;
+        height: 350vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main {
+        height: 880vh;
+    }
+
+
+
+
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .navigationContainer {
+        display: none;
+    }
+
+    .ResponsivenavigationContainer.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .ResponsivenavigationContainer {
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        color: white;
+        position: relative;
+
+
+
+    }
+
+    .ResponsivenavigationContainer .head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .ResponsivenavigationContainer .head .logo {
+        font-size: 40px;
+        font-family: 'Nova Square', sans-serif;
+        font-weight: 900;
+        background: linear-gradient(90deg, #4E56DC, #864EEF);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: #4E56DC;
+        -webkit-text-stroke: 5px;
+        letter-spacing: 5px;
+
+    }
+
+    .closeNav {
+        font-size: 5rem;
+        display: none;
+    }
+
+    .closeNav:hover {
+        color: red;
+    }
+
+    .openNav {
+        font-size: 5rem;
+        cursor: pointer;
+    }
+
+    .openNav:hover {
+        color: #333ce4
+    }
+
+    .ResponsivenavigationContainer .Navbar {
+        width: 100%;
+        height: 0vh;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .ResponsivenavigationContainer .Navbar nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        font-size: 2.3rem;
+
+    }
+
+
+    .ResponsivenavigationContainer navbar nav a {
+        color: white;
+        border-bottom: 1px solid rgb(63, 61, 61);
+    }
+
+    .ResponsivenavigationContainer navbar nav .active {
+        color: #4B56DE;
+    }
+
+    .homeContainer .introduction .leftSide {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+
+    }
+
+    .homeContainer .backgroundText {
+        position: absolute;
+        top: 35%;
+        left: 0;
+    }
+
+    .imageSide {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .homeContainer .introduction .leftSide .btns {
+        margin-top: 5%;
+    }
+
+    .AboutContainer {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+
+    }
+
+    .hire {
+        font-size: 1.8rem;
+    }
+
+    .cv {
+        font-size: 1.8rem;
+    }
+
+    .AboutContainer .AboutImageSide {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .AboutContainer .AboutImageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutContainer .AboutSide {
+        width: 90%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .AboutContainer .AboutSide .aboutMyself {
+        font-size: 1.9rem;
+
+    }
+
+    .SkillContainer .skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .SkillContainer {
+        height: 330vh;
+    }
+
+
+
+    .Card {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.5s all ease;
+
+
+    }
+
+
+
+    .ProjectContainer {
+        width: 100%;
+        height: 410vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main {
+        height: 1020vh;
+    }
+
+
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .navigationContainer {
+        display: none;
+    }
+
+    .ResponsivenavigationContainer.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .ResponsivenavigationContainer {
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        color: white;
+        position: relative;
+
+
+
+    }
+
+    .ResponsivenavigationContainer .head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1%;
+    }
+
+    .ResponsivenavigationContainer .head .logo {
+        font-size: 40px;
+        font-family: 'Nova Square', sans-serif;
+        font-weight: 900;
+        background: linear-gradient(90deg, #4E56DC, #864EEF);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: #4E56DC;
+        -webkit-text-stroke: 5px;
+        letter-spacing: 5px;
+
+    }
+
+    .closeNav {
+        font-size: 5rem;
+        display: none;
+    }
+
+    .closeNav:hover {
+        color: red;
+    }
+
+    .openNav {
+        font-size: 5rem;
+        cursor: pointer;
+    }
+
+    .openNav:hover {
+        color: #333ce4
+    }
+
+    .ResponsivenavigationContainer .Navbar {
+        width: 100%;
+        height: 0vh;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .ResponsivenavigationContainer .Navbar nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        font-size: 2.3rem;
+
+    }
+
+
+    .ResponsivenavigationContainer navbar nav a {
+        color: white;
+        border-bottom: 1px solid rgb(63, 61, 61);
+    }
+
+    .ResponsivenavigationContainer navbar nav .active {
+        color: #4B56DE;
+    }
+
+    .homeContainer .introduction .leftSide {
+        width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+
+
+    }
+
+    .homeContainer .backgroundText {
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    .imageSide {
+        width: 400px;
+        height: 400px;
+    }
+
+    .imageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .homeContainer .introduction .leftSide .btns {
+        margin-top: 5%;
+    }
+
+    .AboutContainer {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+
+    }
+
+    .hire {
+        font-size: 1.8rem;
+    }
+
+    .cv {
+        font-size: 1.8rem;
+    }
+
+    .AboutContainer .AboutImageSide {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 550px;
+        height: 550px;
+    }
+
+    .AboutContainer .AboutImageSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutContainer .AboutSide {
+        width: 90%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .AboutContainer .AboutSide .aboutMyself {
+        font-size: 1.9rem;
+
+    }
+
+    .SkillContainer .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .SkillContainer {
+        height: 160vh;
+    }
+
+
+
+    .Card {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.5s all ease;
+
+
+    }
+
+
+
+    .ProjectContainer {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main {
+        height: 600vh;
+    }
+
+
+}
