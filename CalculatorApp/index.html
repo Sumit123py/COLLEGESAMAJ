@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="main_container">
+        <div class="container">
+            <div class="navbar">
+                <div class="nav_to nav_to_calculator">
+                    <p><i class="fa-solid fa-equals"></i></p>
+                </div>
+                <div class="nav_to history">
+                    <p><i class="fa-solid fa-clock-rotate-left"></i></p>
+                </div>
+           </div>
+            <div class="history_display"></div>
+            <div class="screens">
+                <div class="slider">
+                    <div class="calculator">
+                        <div class="calculation_display_area">
+                            <p class="question" id="question_id"></p>
+                            <p class="answer" id="answer_id"></p>
+                        </div>
+                        <div class="calculator_screen ">
+
+                            <p class="item1">C</p>
+                            <p class="item2"><i class="fa-solid fa-delete-left"></i></p>
+                            <p class="item item3">%</p>
+                            <p class="item item4">/</p>
+
+                            <p class="item item5">7</p>
+                            <p class="item item6">8</p>
+                            <p class="item item7">9</p>
+                            <p class="item item8">*</p>
+
+                            <p class="item item9">4</p>
+                            <p class="item item10">5</p>
+                            <p class="item item11">6</p>
+                            <p class="item item12">-</p>
+
+                            <p class="item item13">1</p>
+                            <p class="item item14">2</p>
+                            <p class="item item15">3</p>
+                            <p class="item item16">+</p>
+
+                            <p class="item item17">0</p>
+                            <p class="item item18">.</p>
+                            <p class="item19"><i class="fa-solid fa-check"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slider historyContainer" id="history">
+
+                    <div class="history_list">
+                    
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
